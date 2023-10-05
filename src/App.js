@@ -1,21 +1,19 @@
-
+import GamePage from "./pages/Game/GamePage";
+import HomePage from "./pages/Home/HomePage";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/poker-table" element={<GamePage />} />
+
+          <Route path="*" element={<div>404 - Page Not FOUND</div>} />
+        </Routes>
+      </Router>
+
     </div>
   );
 }
