@@ -12,15 +12,12 @@ const HomePage = () => {
       <HomeContainer>
         <PlayButton href="/poker-table">Play</PlayButton>
         <HomeTitle>♠️RULES♠️</HomeTitle>
-        <HomeParagraph>Objective: Win by having the best hand or convincing others to fold.</HomeParagraph>
+        <HomeParagraph>Play against one opponent (the dealer) and aim to get a hand total closest to 21 without exceeding it.</HomeParagraph>
         <HomeParagraph>
-          Setup: Standard deck, 2 - 10 players, 2 hole cards, 5 community cards.
+          Face cards are worth 10, numbered cards their face value, and Aces worth 11.
         </HomeParagraph>
-        <HomeParagraph>Gameplay:
-          Small and big blind bets.
-          Deal 2 cards.
-          Betting rounds: Pre - flop, Flop, Turn, River.</HomeParagraph>
-        <HomeParagraph>Showdown: Reveal and compare hands to determine the winner.</HomeParagraph>
+        <HomeParagraph>If you go over 21, you lose (bust).</HomeParagraph>
+        <HomeParagraph>Blackjack is an Ace and a 10-point card.</HomeParagraph>
 
       </HomeContainer>
 
